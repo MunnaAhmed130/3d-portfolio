@@ -1,17 +1,36 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter } from "react-router-dom";
+import {
+  Navbar,
+  Hero,
+  Experience,
+  About,
+  Tech,
+  Works,
+  Feedbacks,
+  Contact,
+  StarsCanvas,
+} from "./components";
 
 const App = () => {
-
   return (
-    <div className="App">
+    <BrowserRouter>
       <div>
-       3D Developer Portfolio
+        <div>
+          <Navbar />
+          <Hero />
+        </div>
+        <About />
+        <Experience />
+        <Tech />
+        <Works />
+        <Feedbacks />
+        <div>
+          <Contact />
+          <StarsCanvas />
+        </div>
       </div>
-    </div>
-  )
-}
+    </BrowserRouter>
+  );
+};
 
-export default App
+export default App;
