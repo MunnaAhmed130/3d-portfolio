@@ -60,7 +60,7 @@ const Navbar = () => {
                   key={link.id}
                   className={`${
                     active === link.title ? "text-white" : "text-secondary"
-                  } text-[16px] font-poppins font-medium cursor-pointer`}
+                  } text-[16px]  font-medium cursor-pointer`}
                   onClick={() => {
                     setToggle(!toggle);
                     setActive(link.title);
