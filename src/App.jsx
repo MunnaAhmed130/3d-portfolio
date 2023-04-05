@@ -3,12 +3,12 @@ import {
   Navbar,
   Hero,
   Experience,
-  About,
   Tech,
   Works,
   Feedbacks,
   Contact,
   StarsCanvas,
+  About,
 } from "./components";
 
 const App = () => {
