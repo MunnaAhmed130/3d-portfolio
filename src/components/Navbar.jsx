@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { mylogo, menu, close } from "../assets";
+import { logo, menu, close } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -22,7 +22,7 @@ const Navbar = () => {
           }}
           a
         >
-          <img src={mylogo} className="w-10 h-10 object-fit " alt="logo" />
+          <img src={logo} className="w-10 h-10 object-fit " alt="logo" />
           <p className="text-white">
             Munna <span>Ahmed</span>
           </p>
